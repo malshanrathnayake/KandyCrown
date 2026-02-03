@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ScrollTrigger.refresh();
         }, "-=1")
         .add(() => {
-            document.querySelector('.knd-preloader').classList.add('mil-hidden');
+            document.querySelector('.knd-preloader').classList.add('knd-hidden');
         });
 
     /* -------------------------------------------
@@ -138,13 +138,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    addHoverEffect(".knd-c-light", "mil-light-active");
-    addHoverEffect(".knd-c-dark", "mil-dark-active");
-    addHoverEffect(".knd-c-gone", "mil-gone-active");
-    addHoverEffect(".knd-c-view", "mil-view-active");
-    addHoverEffect(".knd-c-next", "mil-next-active");
-    addHoverEffect(".knd-c-read", "mil-read-active");
-    addHoverEffect(".knd-c-swipe", "mil-swipe-active");
+    addHoverEffect(".knd-c-light", "knd-light-active");
+    addHoverEffect(".knd-c-dark", "knd-dark-active");
+    addHoverEffect(".knd-c-gone", "knd-gone-active");
+    addHoverEffect(".knd-c-view", "knd-view-active");
+    addHoverEffect(".knd-c-next", "knd-next-active");
+    addHoverEffect(".knd-c-read", "knd-read-active");
+    addHoverEffect(".knd-c-swipe", "knd-swipe-active");
 
     document.addEventListener("mousemove", function (e) {
         mouseX = e.clientX;
@@ -181,15 +181,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const tp2 = document.querySelector('.knd-top-panel-2');
 
         if (menuBtn) {
-            menuBtn.classList.toggle('mil-active');
-            menuFrame.classList.toggle('mil-active');
-            btnFrame.classList.toggle('mil-active');
-            tp2.classList.toggle('mil-menu-open');
+            menuBtn.classList.toggle('knd-active');
+            menuFrame.classList.toggle('knd-active');
+            btnFrame.classList.toggle('knd-active');
+            tp2.classList.toggle('knd-menu-open');
         } else if (event.target.closest('.knd-menu-frame') && !event.target.closest('.knd-menu-frame > *')) {
-            menuFrame.classList.remove('mil-active');
-            btnFrame.classList.remove('mil-active');
-            document.querySelector('.knd-menu-btn').classList.remove('mil-active');
-            tp2.classList.remove('mil-menu-open');
+            menuFrame.classList.remove('knd-active');
+            btnFrame.classList.remove('knd-active');
+            document.querySelector('.knd-menu-btn').classList.remove('knd-active');
+            tp2.classList.remove('knd-menu-open');
         }
     });
 
@@ -198,10 +198,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const href = this.getAttribute('href');
 
             if (isValidHref(href)) {
-                document.querySelector('.knd-menu-btn').classList.remove('mil-active');
-                document.querySelector('.knd-menu-frame').classList.remove('mil-active');
-                document.querySelector('.knd-buttons-tp-frame').classList.remove('mil-active');
-                document.querySelector('.knd-top-panel-2').classList.remove('mil-menu-open');
+                document.querySelector('.knd-menu-btn').classList.remove('knd-active');
+                document.querySelector('.knd-menu-frame').classList.remove('knd-active');
+                document.querySelector('.knd-buttons-tp-frame').classList.remove('knd-active');
+                document.querySelector('.knd-top-panel-2').classList.remove('knd-menu-open');
             } else {
                 event.preventDefault();
             }
@@ -218,16 +218,16 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault(); // Додаємо, щоб уникнути переходу за посиланням
 
             const parentElement = link.parentElement;
-            const isActive = parentElement.classList.contains('mil-active');
+            const isActive = parentElement.classList.contains('knd-active');
 
             document.querySelectorAll('.knd-has-children').forEach(el => {
                 const ul = el.querySelector('ul');
-                el.classList.remove('mil-active');
+                el.classList.remove('knd-active');
                 if (ul) ul.style.maxHeight = '0';
             });
 
             if (!isActive) {
-                parentElement.classList.add('mil-active');
+                parentElement.classList.add('knd-active');
                 const ul = parentElement.querySelector('ul');
                 if (ul) ul.style.maxHeight = `${ul.scrollHeight}px`;
             }
@@ -241,14 +241,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const menuFrame = document.querySelector('.knd-menu-frame-2');
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        if (menuFrame.classList.contains('mil-active')) {
+        if (menuFrame.classList.contains('knd-active')) {
             return; // Stop execution if .knd-active class is present
         }
 
         if (scrollTop > lastScrollTop) {
-            topPanel.classList.add('mil-scroll');
+            topPanel.classList.add('knd-scroll');
         } else if (scrollTop < lastScrollTop && scrollTop === 0) {
-            topPanel.classList.remove('mil-scroll');
+            topPanel.classList.remove('knd-scroll');
         }
 
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
@@ -312,10 +312,10 @@ document.addEventListener("DOMContentLoaded", function () {
             if (node.nodeType === Node.TEXT_NODE) {
                 node.textContent.split(' ').forEach((word, index, array) => {
                     const wordSpan = document.createElement('span');
-                    wordSpan.classList.add('mil-word-span');
+                    wordSpan.classList.add('knd-word-span');
                     word.split('').forEach(letter => {
                         const letterSpan = document.createElement('span');
-                        letterSpan.classList.add('mil-letter-span');
+                        letterSpan.classList.add('knd-letter-span');
                         letterSpan.textContent = letter;
                         wordSpan.appendChild(letterSpan);
                     });
@@ -515,13 +515,13 @@ document.addEventListener("DOMContentLoaded", function () {
     ------------------------------------------- */
     function addClassToElement(element) {
         if (element) {
-            element.classList.add('mil-added');
+            element.classList.add('knd-added');
         }
     }
 
     function removeClassFromElement(element) {
         if (element) {
-            element.classList.remove('mil-added');
+            element.classList.remove('knd-added');
         }
     }
 
@@ -660,7 +660,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const elements = document.querySelectorAll('.knd-cursor-follower');
 
         elements.forEach(element => {
-            element.className = 'mil-cursor-follower';
+            element.className = 'knd-cursor-follower';
         });
 
         function addHoverEffect(selector, className) {
@@ -674,13 +674,13 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
-        addHoverEffect(".knd-c-light", "mil-light-active");
-        addHoverEffect(".knd-c-dark", "mil-dark-active");
-        addHoverEffect(".knd-c-gone", "mil-gone-active");
-        addHoverEffect(".knd-c-view", "mil-view-active");
-        addHoverEffect(".knd-c-next", "mil-next-active");
-        addHoverEffect(".knd-c-read", "mil-read-active");
-        addHoverEffect(".knd-c-swipe", "mil-swipe-active");
+        addHoverEffect(".knd-c-light", "knd-light-active");
+        addHoverEffect(".knd-c-dark", "knd-dark-active");
+        addHoverEffect(".knd-c-gone", "knd-gone-active");
+        addHoverEffect(".knd-c-view", "knd-view-active");
+        addHoverEffect(".knd-c-next", "knd-next-active");
+        addHoverEffect(".knd-c-read", "knd-read-active");
+        addHoverEffect(".knd-c-swipe", "knd-swipe-active");
 
         document.addEventListener("mousemove", function (e) {
             mouseX = e.clientX;
@@ -717,10 +717,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 const href = this.getAttribute('href');
 
                 if (isValidHref(href)) {
-                    document.querySelector('.knd-menu-btn').classList.remove('mil-active');
-                    document.querySelector('.knd-menu-frame').classList.remove('mil-active');
-                    document.querySelector('.knd-buttons-tp-frame').classList.remove('mil-active');
-                    document.querySelector('.knd-top-panel-2').classList.remove('mil-menu-open');
+                    document.querySelector('.knd-menu-btn').classList.remove('knd-active');
+                    document.querySelector('.knd-menu-frame').classList.remove('knd-active');
+                    document.querySelector('.knd-buttons-tp-frame').classList.remove('knd-active');
+                    document.querySelector('.knd-top-panel-2').classList.remove('knd-menu-open');
                 } else {
                     event.preventDefault(); // Якщо href невалідний, зупиняємо дію за замовчуванням
                 }
@@ -737,16 +737,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.preventDefault(); // Додаємо, щоб уникнути переходу за посиланням
 
                 const parentElement = link.parentElement;
-                const isActive = parentElement.classList.contains('mil-active');
+                const isActive = parentElement.classList.contains('knd-active');
 
                 document.querySelectorAll('.knd-has-children').forEach(el => {
                     const ul = el.querySelector('ul');
-                    el.classList.remove('mil-active');
+                    el.classList.remove('knd-active');
                     if (ul) ul.style.maxHeight = '0';
                 });
 
                 if (!isActive) {
-                    parentElement.classList.add('mil-active');
+                    parentElement.classList.add('knd-active');
                     const ul = parentElement.querySelector('ul');
                     if (ul) ul.style.maxHeight = `${ul.scrollHeight}px`;
                 }
@@ -796,10 +796,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (node.nodeType === Node.TEXT_NODE) {
                     node.textContent.split(' ').forEach((word, index, array) => {
                         const wordSpan = document.createElement('span');
-                        wordSpan.classList.add('mil-word-span');
+                        wordSpan.classList.add('knd-word-span');
                         word.split('').forEach(letter => {
                             const letterSpan = document.createElement('span');
-                            letterSpan.classList.add('mil-letter-span');
+                            letterSpan.classList.add('knd-letter-span');
                             letterSpan.textContent = letter;
                             wordSpan.appendChild(letterSpan);
                         });
@@ -1000,13 +1000,13 @@ document.addEventListener("DOMContentLoaded", function () {
         ------------------------------------------- */
         function addClassToElement(element) {
             if (element) {
-                element.classList.add('mil-added');
+                element.classList.add('knd-added');
             }
         }
 
         function removeClassFromElement(element) {
             if (element) {
-                element.classList.remove('mil-added');
+                element.classList.remove('knd-added');
             }
         }
 

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Routing;
 using System.Text;
 
-namespace core_web.Helpers
+namespace KandyCrown.Web.Helpers
 {
     public static class HtmlHelpers
     {

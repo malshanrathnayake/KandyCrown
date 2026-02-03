@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace SENSEI.WEB.Helpers
+namespace KandyCrown.Web.Helpers
 {
     public static class GlobalHelpers
     {

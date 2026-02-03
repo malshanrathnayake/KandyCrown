@@ -1,5 +1,94 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@using KandyCrown.Web.Helpers
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- grid css -->
+    <link rel="stylesheet" href="~/theme/v1/css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="~/theme/v1/css/plugins/fontawesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="~/theme/v1/css/plugins/swiper.min.css">
+    <!-- okai css -->
+    <link rel="stylesheet" href="~/theme/v1/css/style-dark.css">
+    <!-- page title -->
+    <title>Kandy Crown</title>
+
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="knd-page-wrapper">
+
+        <!-- cursor -->
+        <div class="knd-cursor-follower"></div>
+        <!-- cursor end -->
+
+        <!-- preloader -->
+        <div class="knd-preloader">
+            <div class="knd-preloader-animation">
+                <div class="knd-pos-abs knd-animation-1">
+                    <p class="knd-head1 knd-m1">Kandy</p>
+                    <p class="knd-head1 knd-a2">Crown</p>
+                    <p class="knd-head1 knd-m1">Restaurant</p>
+                </div>
+                <div class="knd-pos-abs knd-animation-2">
+                    <div class="knd-reveal-frame">
+                        <p class="knd-reveal-box"></p>
+                        <p class="knd-head1 knd-m1">kandycrown.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- scroll progress -->
+        <div class="knd-progress-track">
+            <div class="knd-progress"></div>
+        </div>
+        <!-- scroll progress end -->
+
+        @Html.RenderAction("Header", "PublicLayout", new { Area = "" })
+
+        <!-- page transition -->
+        <div class="knd-transition-fade" id="swup">
+            <div class="knd-transition-frame">
+
+
+                @RenderBody()
+
+            </div>
+        </div>
+        <!-- page transition -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- swup js -->
+    <script src="https://unpkg.com/swup@4"></script>
+    <!-- gsap js -->
+    <script src="~/theme/v1/js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="~/theme/v1/js/plugins/ScrollSmoother.min.js"></script>
+    <!-- scroll trigger js -->
+    <script src="~/theme/v1/js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="~/theme/v1/js/plugins/ScrollTo.min.js"></script>
+    <!-- swiper js -->
+    <script src="~/theme/v1/js/plugins/swiper.min.js"></script>
+    <!-- parallax js -->
+    <script src="~/theme/v1/js/plugins/parallax.js"></script>
+
+    <!-- main js -->
+    <script src="~/theme/v1/js/main.js"></script>
+
+</body>
+
+</html>

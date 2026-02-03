@@ -1,0 +1,20 @@
+﻿@using KandyCrown.Web.Helpers
+
+@{
+    Layout = null;
+}
+
+<!-- fixed elements -->
+<div class="knd-fixed">
+    <div class="knd-top-panel-2">
+        <div class="container">
+
+            @Html.RenderAction("Navigation", "PublicLayout", new { Area = "" })
+
+        </div>
+    </div>
+
+    @Html.RenderAction("Menu", "PublicLayout", new { Area = "" })
+
+</div>
+<!-- fixed elements end -->
