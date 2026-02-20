@@ -14,6 +14,11 @@ namespace KandyCrown.Web.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Hero2()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> Footer()
         {
             return View();

@@ -1,190 +1,353 @@
 ﻿@using KandyCrown.Web.Helpers
 
-
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
-
 
 <!-- content -->
 <div id="smooth-content" class="knd-content">
 
-    @Html.RenderAction("Hero", "KandyCrownHome", new { Area = "" })
+    @Html.RenderAction("Hero2", "KandyCrownHome", new { Area = "" })
 
-    <!-- iconboxes -->
-    <div class="knd-p-0-100" id="scroll">
+    <!-- 1) Executive Summary -->
+    <section class="knd-p-160-100" id="scroll">
         <div class="container">
-            <div class="row knd-jcc">
-                <div class="col-sm-8 col-lg-4">
-                    <div class="knd-iconbox knd-tac knd-mb60">
-                        <img src="~/theme/v1/img/home-1/iconbox/2.svg" alt="icon" class="knd-mb30 knd-up">
-                        <h4 class="knd-head4 knd-mb30 knd-up">Expert Team</h4>
-                        <p class="knd-text-md knd-shortened knd-up">Our team consists of experienced professionals who work with passion, delivering high-quality projects.</p>
-                    </div>
+            <div class="row knd-jcb knd-aie">
+                <div class="col-12">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Wild Ceylon</p>
                 </div>
-                <div class="col-sm-8 col-lg-4">
-                    <div class="knd-iconbox knd-mb60">
-                        <img src="~/theme/v1/img/home-1/iconbox/1.svg" alt="icon" class="knd-mb30 knd-up">
-                        <h4 class="knd-head4 knd-mb30 knd-up">Innovative Solutions</h4>
-                        <p class="knd-text-md knd-shortened knd-up">We offer unique and creative approaches that help your business stand out in the market and achieve success.</p>
-                    </div>
+
+                <div class="col-lg-5">
+                    <h2 class="knd-head1 knd-mb60 knd-up">
+                        Modern Sri Lankan <span class="knd-a1">Casual Dining</span> & Bar
+                    </h2>
+                    <p class="knd-text-sm knd-deco-text knd-mb60 knd-up">
+                        Inspired by Sri Lanka’s heritage and driven by bold flavour, Wild Ceylon reimagines
+                        classic dishes through contemporary techniques—approachable, comfortable, and vibrant.
+                    </p>
                 </div>
-                <div class="col-sm-8 col-lg-4">
-                    <div class="knd-iconbox knd-tac knd-mb60">
-                        <img src="~/theme/v1/img/home-1/iconbox/3.svg" alt="icon" class="knd-mb30 knd-up">
-                        <h4 class="knd-head4 knd-mb30 knd-up">Client Focus</h4>
-                        <p class="knd-text-md knd-shortened knd-up">We prioritize client needs, deeply understanding them to create tailored solutions for maximum results.</p>
-                    </div>
+
+                <div class="col-lg-6">
+                    <p class="knd-text-md knd-mb30 knd-up">
+                        The venue offers an elevated yet relaxed dining experience, complemented by a well-curated bar.
+                        We’re built to attract both local patrons and visitors seeking flavour-driven cuisine, cultural authenticity,
+                        and a welcoming social atmosphere.
+                    </p>
+                    <p class="knd-text-md knd-up">
+                        Our advantage is a distinctive Modern Sri Lankan identity, heritage-inspired design, and a balanced focus on
+                        food, beverages, and service—supported by an experienced leadership team for strong governance and sustainable growth.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- iconboxes end -->
+    </section>
+    <!-- 1) Executive Summary end -->
 
-    <!-- services -->
-    <div id="services">
+    <!-- 2) Vision & Mission -->
+    <section class="knd-p-0-160" id="vision-mission">
         <div class="container">
-            <div class="row knd-jcb">
+            <div class="knd-half-container knd-stl knd-up">
+                <div class="knd-text-box knd-g-m4 knd-p-160-160">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Vision</p>
+                    <h2 class="knd-display3 knd-mb60 knd-m1 knd-up">
+                        Leading Modern Sri Lankan <span class="knd-a1">Dining & Bar</span> brand
+                    </h2>
+                    <p class="knd-text-md knd-deco-text knd-up">
+                        To establish Wild Ceylon as a leading Modern Sri Lankan casual dining and bar brand,
+                        recognised for authentic flavours, relaxed sophistication, and consistent hospitality standards.
+                    </p>
+                </div>
+
+                <div class="knd-image-box">
+                    <div class="knd-image-frame">
+                        <img src="~/theme/v1/img/home-4/img_2.jpg" alt="Wild Ceylon ambience" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                        <div class="knd-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2) Vision & Mission -->
+    <section class="knd-p-0-160" id="vision-mission">
+
+        <div class="container">
+            <div class="row knd-jcb knd-mt60">
                 <div class="col-12">
-                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Our Services</p>
-                    <h2 class="knd-head1 knd-mb90 knd-up">We generate <span class="knd-a1">unique</span> ideas</h2>
-                    <ul class="knd-services-list knd-mb160">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Mission</p>
+                    <ul class="knd-services-list">
                         <li class="knd-service-item knd-768-mb60 knd-up">
-                            <div class="knd-item-text knd-mb30">
-                                <h3 class="knd-head3 knd-mb30 knd-up">UI/IX design</h3>
-                                <p class="knd-text-md knd-shortened knd-deco-text knd-max-3row-text knd-up">Design of intuitive and visually appealing user interfaces for web and mobile applications, focusing on enhancing the user experience and usability.</p>
-                            </div>
-                            <div class="knd-mb30 knd-up">
-                                <a href="service-stl.html" class="knd-stylized-btn knd-c-gone">
-                                    <i class="fal fa-arrow-up"></i>
-                                    <span>Read more</span>
-                                </a>
+                            <div class="knd-item-text">
+                                <h3 class="knd-head3 knd-mb30 knd-up">Celebrate heritage</h3>
+                                <p class="knd-text-md knd-deco-text knd-up">
+                                    Celebrate Sri Lankan culinary heritage through modern, accessible dining.
+                                </p>
                             </div>
                         </li>
                         <li class="knd-service-item knd-768-mb60 knd-up">
-                            <div class="knd-item-text knd-mb30">
-                                <h3 class="knd-head3 knd-mb30 knd-up">Brand strategy</h3>
-                                <p class="knd-text-md knd-shortened knd-deco-text knd-max-3row-text knd-up">Comprehensive brand development, including logo creation, color scheme selection, and visual style design to ensure a cohesive and memorable brand identity.</p>
-                            </div>
-                            <div class="knd-mb30 knd-up">
-                                <a href="service-stl.html" class="knd-stylized-btn knd-c-gone">
-                                    <i class="fal fa-arrow-up"></i>
-                                    <span>Read more</span>
-                                </a>
+                            <div class="knd-item-text">
+                                <h3 class="knd-head3 knd-mb30 knd-up">Deliver quality</h3>
+                                <p class="knd-text-md knd-deco-text knd-up">
+                                    Deliver high-quality food and beverages in a casual yet refined setting.
+                                </p>
                             </div>
                         </li>
                         <li class="knd-service-item knd-up">
-                            <div class="knd-item-text knd-mb30">
-                                <h3 class="knd-head3 knd-mb30 knd-up">Marketing and SMM</h3>
-                                <p class="knd-text-md knd-shortened knd-deco-text knd-max-3row-text knd-up">Creation of impactful advertising campaigns and marketing materials designed to increase brand visibility, engage target audiences, and drive customer acquisition.</p>
-                            </div>
-                            <div class="knd-mb30 knd-up">
-                                <a href="service-stl.html" class="knd-stylized-btn knd-c-gone">
-                                    <i class="fal fa-arrow-up"></i>
-                                    <span>Read more</span>
-                                </a>
+                            <div class="knd-item-text">
+                                <h3 class="knd-head3 knd-mb30 knd-up">Build a social space</h3>
+                                <p class="knd-text-md knd-deco-text knd-up">
+                                    Create a vibrant social space combining dining and bar culture—built for scalable growth.
+                                </p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- services end -->
 
-    <!-- counters -->
-    <div class="knd-p-0-160">
+    </section>
+    <!-- 2) Vision & Mission end -->
+
+    <!-- 3) Concept & Theme -->
+    <section class="knd-p-0-160" id="concept">
         <div class="container">
+            <div class="row knd-jcb">
+                <div class="col-12">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Concept & Theme</p>
+                    <h2 class="knd-head1 knd-mb90 knd-up">
+                        Heritage-inspired <span class="knd-a1">comfort</span>, modern energy
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row knd-jcc">
+                <div class="col-sm-10 col-lg-4">
+                    <div class="knd-iconbox knd-tac knd-mb60">
+                        <img src="~/theme/v1/img/home-1/iconbox/1.svg" alt="Culinary philosophy" class="knd-mb30 knd-up">
+                        <h4 class="knd-head4 knd-mb30 knd-up">Culinary philosophy</h4>
+                        <p class="knd-text-md knd-shortened knd-up">
+                            Modern Sri Lankan cuisine with contemporary interpretations, balanced flavours,
+                            and quality ingredients—designed for sharing and repeat visits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-lg-4">
+                    <div class="knd-iconbox knd-tac knd-mb60">
+                        <img src="~/theme/v1/img/home-1/iconbox/2.svg" alt="Design identity" class="knd-mb30 knd-up">
+                        <h4 class="knd-head4 knd-mb30 knd-up">Design identity</h4>
+                        <p class="knd-text-md knd-shortened knd-up">
+                            Royal heritage meets modern casual comfort—warm reds, gold accents, earthy tones,
+                            natural wood finishes, textured materials, and subtle cultural motifs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-lg-4">
+                    <div class="knd-iconbox knd-tac knd-mb60">
+                        <img src="~/theme/v1/img/home-1/iconbox/3.svg" alt="Atmosphere and music" class="knd-mb30 knd-up">
+                        <h4 class="knd-head4 knd-mb30 knd-up">Atmosphere & music</h4>
+                        <p class="knd-text-md knd-shortened knd-up">
+                            A lively yet relaxed ambience with curated playlists—Sri Lankan instrumental influences,
+                            modern lounge, and upbeat world-fusion—supporting dining and bar experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3) Concept & Theme end -->
+
+    <!-- 4) Market Positioning -->
+    @* <section class="knd-p-0-160" id="market">
+        <div class="container">
+            <div class="row knd-jcb">
+                <div class="col-12">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Market Positioning</p>
+                    <h2 class="knd-head1 knd-mb90 knd-up">
+                        A broad audience, one <span class="knd-a1">distinct</span> identity
+                    </h2>
+                </div>
+
+                <div class="col-lg-6">
+                    <ul class="knd-services-list knd-mb60">
+                        <li class="knd-service-item knd-up">
+                            <div class="knd-item-text knd-mb30">
+                                <h3 class="knd-head3 knd-mb30 knd-up">Target market</h3>
+                                <p class="knd-text-md knd-deco-text knd-up">Local residents and working professionals</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Tourists seeking casual cultural dining experiences</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Social groups and after-work patrons</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Bar customers looking for distinctive cocktails and atmosphere</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <ul class="knd-services-list knd-mb60">
+                        <li class="knd-service-item knd-up">
+                            <div class="knd-item-text knd-mb30">
+                                <h3 class="knd-head3 knd-mb30 knd-up">Competitive advantage</h3>
+                                <p class="knd-text-md knd-deco-text knd-up">Unique Modern Sri Lankan casual dining and bar concept</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Strong cultural brand identity</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Balanced food and beverage offering</p>
+                                <p class="knd-text-md knd-deco-text knd-up">Experienced leadership and hospitality management</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- quick highlights -->
             <div class="row">
                 <div class="col-lg-4">
                     <div class="knd-counter-item knd-stl knd-mb30 knd-768-mb60 knd-up">
-                        <h4 class="knd-up">14<span class="knd-a2">+</span></h4>
+                        <h4 class="knd-up">4<span class="knd-a2">+</span></h4>
                         <div class="knd-counter-text">
-                            <h5 class="knd-head4 knd-m1 knd-up">Years experience</h5>
+                            <h5 class="knd-head4 knd-m1 knd-up">Core audience groups</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="knd-counter-item knd-stl knd-mb30 knd-768-mb60 knd-up">
-                        <h4 class="knd-up">45<span class="knd-a2">+</span></h4>
+                        <h4 class="knd-up">1<span class="knd-a2">×</span></h4>
                         <div class="knd-counter-text">
-                            <h5 class="knd-head4 knd-m1 knd-up">Unique customers</h5>
+                            <h5 class="knd-head4 knd-m1 knd-up">Modern Sri Lankan identity</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="knd-counter-item knd-stl knd-mb30 knd-up">
-                        <h4 class="knd-up">57<span class="knd-a2">+</span></h4>
+                        <h4 class="knd-up">2<span class="knd-a2">+</span></h4>
                         <div class="knd-counter-text">
-                            <h5 class="knd-head4 knd-m1 knd-up">Completed projects</h5>
+                            <h5 class="knd-head4 knd-m1 knd-up">Food + Bar focus</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- counters end -->
 
-    <!-- call to action -->
-    <div class="container">
-        <div class="knd-half-container knd-stl knd-up">
-            <div class="knd-text-box knd-g-m4 knd-p-160-160">
-                <p class="knd-stylized knd-m2 knd-mb60 knd-up">Contact</p>
-                <h2 class="knd-display3 knd-mb60 knd-m1 knd-up">Let’s <span class="knd-a1">make </span> <br>an <span class="knd-a1">impact </span><br>together.</h2>
-                <p class="knd-text-md knd-deco-text knd-shortened knd-up">Welcome to <span class="knd-a2">kC</span> where your ideas come to life. We specialize in crafting unique brands, captivating advertising campaigns, and effective digital strategies.</p>
-            </div>
-            <div class="knd-image-box">
-                <div class="knd-image-frame">
-                    <img src="~/theme/v1/img/home-4/1.jpg" alt="img" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
-                    <div class="knd-overlay"></div>
-                </div>
-            </div>
         </div>
-        <div class="row knd-aic knd-jcb knd-no-g">
-            <div class="col-lg-4 knd-992-gone">
-                <p class="knd-text-sm knd-up">We accept your requests 24/7. Feel free to <a href="contact-stl.html" class="knd-text-link knd-a2 knd-c-gone">write to us</a> whenever it is convenient for you</p>
-            </div>
-            <div class="col-lg-6">
-                <div class="knd-button-pad knd-a2">
-                    <span class="knd-up"><a href="contact-stl.html" class="knd-btn knd-btn-border knd-m1 knd-c-gone">Get in touch</a></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- call to action end -->
+    </section> *@
+    <!-- 4) Market Positioning end -->
 
-    <!-- about -->
-    <div class="knd-p-160-100" id="about">
+    <!-- 5) Operating Model -->
+    <section class="knd-p-0-160" id="operating-model">
         <div class="container">
             <div class="row knd-jcb">
                 <div class="col-12">
-                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">About us</p>
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Operatings</p>
+                    <h2 class="knd-head1 knd-mb90 knd-up">
+                        Consistent service, <span class="knd-a1">every day</span>
+                    </h2>
                 </div>
-                <div class="col-lg-4">
-                    <h2 class="knd-head1 knd-mb60 knd-up">Discover <br>Our <span class="knd-a2">agency</span></h2>
-                    <p class="knd-text-sm knd-deco-text knd-mb60 knd-up">Welcome to <span class="knd-a2">kC</span> where your ideas come to life. We specialize in crafting unique brands, captivating advertising campaigns, and effective digital strategies.</p>
+
+                <div class="col-lg-5">
+                    <h3 class="knd-head3 knd-mb30 knd-up">Operating hours</h3>
+                    <p class="knd-text-md knd-deco-text knd-up">10:00 AM – <span class="knd-a1">LATE</span></p>
+                    <p class="knd-text-md knd-deco-text knd-up">Open seven days a week</p>
                 </div>
-                <div class="col-lg-6">
-                    <p class="knd-text-md knd-mb30 knd-up">Our team of talented designers, copywriters, and marketers works with passion and dedication to make your business stand out. We take the time to understand your vision and tailor our approach to ensure your message resonates with your target audience.</p>
-                    <p class="knd-text-md knd-mb60 knd-up">Our goal is to help you build an emotional connection with your audience using cutting-edge tools and approaches. We combine our expertise with your unique insights, creating compelling narratives that not only engage but also inspire. Trust us with your idea, and we'll transform it into a successful project that will impress both you and your clients, driving growth and lasting impact.</p>
+
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h3 class="knd-head3 knd-mb30 knd-up">Service approach</h3>
+                    <p class="knd-text-md knd-up">
+                        Casual dining standards focused on efficiency, friendliness, and consistency—while maintaining
+                        professionalism and attention to the guest experience.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- about end -->
+    </section>
+    <!-- 5) Operating Model end -->
 
-    <!-- team -->
-    <div class="knd-p-0-130 knd-768-p-160-145" id="team">
+    <!-- 6) Venue Layout & Guest Experience -->
+    <section class="knd-p-0-160" id="venue">
+        <div class="container">
+            <div class="knd-half-container knd-stl knd-reverse knd-up">
+                <div class="knd-text-box knd-g-m4 knd-p-160-160">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Venue & Experience</p>
+                    <h2 class="knd-display3 knd-mb60 knd-m1 knd-up">
+                        Stay longer. <span class="knd-a1">Feel</span> at home.
+                    </h2>
+
+                    <h3 class="knd-head3 knd-mb30 knd-up">layout</h3>
+                    <p class="knd-text-md knd-deco-text knd-up">Welcoming entrance with Wild Ceylon branding</p>
+                    <p class="knd-text-md knd-deco-text knd-up">Bar offering cocktails, wines, beers, and Ceylon-inspired beverages</p>
+                    <p class="knd-text-md knd-deco-text knd-up">Casual dining area with flexible seating</p>
+                    <p class="knd-text-md knd-deco-text knd-up">Lounge-style seating for bar patrons</p>
+                    <p class="knd-text-md knd-deco-text knd-up">Guest amenities and staff facilities</p>
+
+                    <h3 class="knd-head3 knd-mt60 knd-mb30 knd-up mt-5">Guest experience</h3>
+                    <p class="knd-text-md knd-up">
+                        Warm Sri Lankan hospitality in a relaxed, social environment—encouraging guests to dine, drink,
+                        and stay longer.
+                    </p>
+                </div>
+
+                <div class="knd-image-box">
+                    <div class="knd-image-frame">
+                        <img src="~/theme/v1/img/home-4/img_1.jpg" alt="Wild Ceylon venue" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                        <div class="knd-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6) Venue Layout & Guest Experience end -->
+
+    <!-- 7) Culinary & Bar Offering -->
+    <section class="knd-p-0-160" id="menu-bar">
+        <div class="container">
+            <div class="row knd-jcb">
+                <div class="col-12">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Culinary & Bar</p>
+                    <h2 class="knd-head1 knd-mb90 knd-up">
+                        Flavour-first food. <span class="knd-a1">Ceylon</span> cocktails.
+                    </h2>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="knd-service-item knd-up">
+                        <div class="knd-item-text knd-mb30">
+                            <h3 class="knd-head3 knd-mb30 knd-up">Cuisine offering</h3>
+                            <p class="knd-text-md knd-deco-text knd-up">Modern Sri Lankan casual dining</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Small plates and share dishes</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Signature rice, curry, and grill items</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Local favourites with modern presentation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="knd-service-item knd-up">
+                        <div class="knd-item-text knd-mb30">
+                            <h3 class="knd-head3 knd-mb30 knd-up">Bar offering</h3>
+                            <p class="knd-text-md knd-deco-text knd-up">Sri Lankan–inspired signature cocktails</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Premium spirits, wines, and beers</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Arrack-based cocktails and spice-infused drinks</p>
+                            <p class="knd-text-md knd-deco-text knd-up">Non-alcoholic mocktails and traditional beverages</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- 7) Culinary & Bar Offering end -->
+    
+    <!-- leadership -->
+    <section class="knd-p-0-160" id="team">
         <div class="container">
             <div class="row knd-aie knd-mb30">
-                <div class="col-lg-6">
-                    <h2 class="knd-head1 knd-mb60 knd-up">Meet Our <span class="knd-a1">Team</span></h2>
+                <div class="col-lg-7">
+                    <h2 class="knd-head1 knd-mb60 knd-up">Leadership <span class="knd-a1">team</span></h2>
                 </div>
-                <div class="col-lg-6">
-                    <p class="knd-stylized knd-m1 knd-tar knd-768-tal knd-mb60 knd-up"><a href="team-stl.html" class="knd-arrow-link knd-c-gone">View all members</a></p>
+                <div class="col-lg-5">
+                    <p class="knd-stylized knd-m1 knd-tar knd-768-tal knd-mb60 knd-up">Strong governance + hospitality execution</p>
                 </div>
             </div>
         </div>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-lg-3">
@@ -194,86 +357,109 @@
                         </div>
                         <div class="knd-hover-overlay">
                             <div class="knd-descr">
-                                <h4 class="knd-head4 knd-m1 knd-mb20">James</h4>
-                                <ul class="knd-social knd-m1 knd-mb20 knd-c-gone">
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-facebook-f"></i></a></li>
-                                </ul>
-                                <p class="knd-stylized knd-a1">UI/UX Designer</p>
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Eranga Wijeweera</h4>
+                                <p class="knd-text-sm knd-m1">Attorney-at-Law (SL) • LL.B, LL.M, PhD</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="knd-team-card knd-stl knd-mb30 knd-768-mb-15 knd-up">
                         <div class="knd-hover-frame">
-                            <img src="~/theme/v1/img/team/10.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                            <img src="~/theme/v1/img/team/2.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
                         </div>
                         <div class="knd-hover-overlay">
                             <div class="knd-descr">
-                                <h4 class="knd-head4 knd-m1 knd-mb20">Edward</h4>
-                                <ul class="knd-social knd-m1 knd-mb20 knd-c-gone">
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                                <p class="knd-stylized knd-a1">QA engineer</p>
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Rishmitha Perera</h4>
+                                <p class="knd-text-sm knd-m1">Director • Sweet Tamarind • Associate CPA</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="knd-team-card knd-stl knd-mb30 knd-768-mb-15 knd-up">
                         <div class="knd-hover-frame">
-                            <img src="~/theme/v1/img/team/11.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                            <img src="~/theme/v1/img/team/4.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
                         </div>
                         <div class="knd-hover-overlay">
                             <div class="knd-descr">
-                                <h4 class="knd-head4 knd-m1 knd-mb20">Monica</h4>
-                                <ul class="knd-social knd-m1 knd-mb20 knd-c-gone">
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-github"></i></a></li>
-                                </ul>
-                                <p class="knd-stylized knd-a1">Web Developer</p>
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Medha Gamage</h4>
+                                <p class="knd-text-sm knd-m1">Head Chef • Bachelor in Culinary Arts</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6 col-lg-3">
                     <div class="knd-team-card knd-stl knd-mb30 knd-768-mb-15 knd-up">
                         <div class="knd-hover-frame">
-                            <img src="~/theme/v1/img/team/12.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                            <img src="~/theme/v1/img/team/6.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
                         </div>
                         <div class="knd-hover-overlay">
                             <div class="knd-descr">
-                                <h4 class="knd-head4 knd-m1 knd-mb20">Paul</h4>
-                                <ul class="knd-social knd-m1 knd-mb20 knd-c-gone">
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#." target="_blank" data-no-swup><i class="fab fa-github"></i></a></li>
-                                </ul>
-                                <p class="knd-stylized knd-a1">Art Director</p>
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Sameera Dahanayaka</h4>
+                                <p class="knd-text-sm knd-m1">Advanced Diploma in Hospitality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row knd-jcc">
+                <div class="col-md-6 col-lg-3">
+                    <div class="knd-team-card knd-stl knd-mb30 knd-768-mb-15 knd-up">
+                        <div class="knd-hover-frame">
+                            <img src="~/theme/v1/img/team/1.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                        </div>
+                        <div class="knd-hover-overlay">
+                            <div class="knd-descr">
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Dilan Nadagamuwage</h4>
+                                <p class="knd-text-sm knd-m1">Director • Owner of Automate Australia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="knd-team-card knd-stl knd-mb30 knd-768-mb-15 knd-up">
+                        <div class="knd-hover-frame">
+                            <img src="~/theme/v1/img/team/3.jpg" alt="team member" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                        </div>
+                        <div class="knd-hover-overlay">
+                            <div class="knd-descr">
+                                <h4 class="knd-head4 knd-m1 knd-mb20">Asoka Wijeweera</h4>
+                                <p class="knd-text-sm knd-m1">Director • International gem businessman</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- team end -->
+    </section>
+    <!-- leadership end -->
+
+    <!-- call to action -->
+    <section class="knd-p-0-160">
+        <div class="container knd-relative">
+            <div class="knd-objects">
+                <img src="/theme/v1/img/shapes/shape1.png" class="knd-obj-1" style="border:none !important; left: 10%; top: 50%; opacity:0.3;">
+                <img src="/theme/v1/img/shapes/shape1.png" class="knd-obj-1" style="border:none !important; left: 90%; top: 10%; opacity:0.3;">
+            </div>
+            <p class="knd-stylized knd-m2 knd-mb60 knd-tac knd-up">Our Signature Moments</p>
+            <h2 class="knd-head1 knd-rubber knd-tac knd-mb60 knd-up">Step into the world of Wild Ceylon, where bold Sri Lankan flavours, vibrant design, and warm hospitality come together to create  <span class="knd-a1">unforgettable</span> dining and bar experiences.</h2>
+            <div class="knd-text-with-button knd-mb60">
+                <p class="knd-text-sm knd-tar knd-768-tac knd-up">Explore our creations and step in to taste,<br>the rich heritage of Wild Ceylon.</p>
+                <span class="knd-up"><a href="#" class="knd-btn knd-btn-border knd-m1 knd-c-gone">View portfolio</a></span>
+            </div>
+        </div>
+    </section>
+    <!-- call to action end -->
 
     <!-- reviews -->
-    <div id="reviews">
+    <section id="reviews" class="knd-p-0-160">
         <div class="container">
             <div class="row knd-jcc">
                 <div class="col-lg-12 knd-tac">
@@ -334,207 +520,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- reviews end -->
 
-    <!-- partners -->
-    <div class="knd-p-160-130">
-        <div class="container">
-            <div class="row knd-jcb knd-aic">
-                <div class="col-6 col-md-3 knd-up">
-                    <a href="#." class="knd-partner knd-type-2 knd-stl knd-mb30" target="_blank" data-no-swup>
-                        <img src="~/theme/v1/img/brands/1.png" alt="partner logo">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 knd-up">
-                    <a href="#." class="knd-partner knd-type-2 knd-stl knd-mb30" target="_blank" data-no-swup>
-                        <img src="~/theme/v1/img/brands/2.png" alt="partner logo">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 knd-up">
-                    <a href="#." class="knd-partner knd-type-2 knd-stl knd-mb30" target="_blank" data-no-swup>
-                        <img src="~/theme/v1/img/brands/3.png" alt="partner logo">
-                    </a>
-                </div>
-                <div class="col-6 col-md-3 knd-up">
-                    <a href="#." class="knd-partner knd-type-2 knd-stl knd-mb30" target="_blank" data-no-swup>
-                        <img src="~/theme/v1/img/brands/5.png" alt="partner logo">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- partners end -->
-
-    <!-- call to action -->
-    <div class="knd-p-0-100">
-        <div class="container knd-relative">
-            <div class="knd-objects">
-                <div class="knd-obj-1"></div>
-                <div class="knd-obj-2"></div>
-            </div>
-            <p class="knd-stylized knd-m2 knd-mb60 knd-tac knd-up">Explore our agency</p>
-            <h2 class="knd-head1 knd-rubber knd-tac knd-mb60 knd-up">kC is a <span class="knd-a1">creative</span> agency that transforms <span class="knd-a1">ideas</span> into masterpieces. We craft <span class="knd-a1">design</span> magic, breathe new life into brands, and make the impossible <span class="knd-a1">possible</span>. Choose <span class="knd-a1">kC</span> because we are worth it!</h2>
-            <div class="knd-text-with-button knd-mb60">
-                <p class="knd-text-sm knd-tar knd-768-tac knd-up">We've been working for several years to build a portfolio <br>that truly reflects our diversity.</p>
-                <span class="knd-up"><a href="portfolio-1-stl.html" class="knd-btn knd-btn-border knd-m1 knd-c-gone">View portfolio</a></span>
-            </div>
-        </div>
-    </div>
-    <!-- call to action end -->
-
-    <!-- blog -->
-    <div class="knd-p-0-160" id="blog">
-        <div class="container">
-            <div class="row knd-aie knd-mb30">
-                <div class="col-md-6">
-                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Newsletter</p>
-                    <h2 class="knd-head1 knd-mb60 knd-up">Latest from <span class="knd-a2">Blog</span></h2>
-                </div>
-                <div class="col-md-6">
-                    <p class="knd-stylized knd-m1 knd-tar knd-768-tal knd-mb60 knd-up"><a href="blog-stl.html" class="knd-arrow-link knd-c-gone">View all publications</a></p>
-                </div>
-            </div>
-            <div class="swiper-container knd-blog-slider">
-                <div class="swiper-wrapper knd-c-swipe knd-c-dark">
-                    <div class="swiper-slide">
-                        <div class="knd-blog-card">
-                            <div class="knd-cover knd-up">
-                                <div class="knd-hover-frame">
-                                    <img src="~/theme/v1/img/blog/9.jpg" alt="cover" class="knd-scale-img" data-value-1="1.15" data-value-2="1">
-                                </div>
-                                <div class="knd-badges">
-                                    <div class="knd-category">design</div>
-                                    <div class="knd-date">29.08.24</div>
-                                </div>
-                            </div>
-                            <a href="publication-stl.html" class="knd-descr knd-c-gone">
-                                <div class="knd-text-frame">
-                                    <h4 class="knd-head4 knd-max-2row-text knd-mb20 knd-up">How to Become a Graphic Designer in 10 Simple Steps</h4>
-                                    <p class="knd-text-md knd-max-2row-text knd-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
-                                </div>
-                                <div class="knd-up knd-768-gone">
-                                    <div class="knd-stylized-btn">
-                                        <i class="fal fa-arrow-up"></i>
-                                        <span>Read more</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="knd-blog-card">
-                            <div class="knd-cover knd-up">
-                                <div class="knd-hover-frame">
-                                    <img src="~/theme/v1/img/blog/10.jpg" alt="cover" class="knd-scale-img" data-value-1="1.15" data-value-2="1">
-                                </div>
-                                <div class="knd-badges">
-                                    <div class="knd-category">Branding</div>
-                                    <div class="knd-date">29.08.24</div>
-                                </div>
-                            </div>
-                            <a href="publication-stl.html" class="knd-descr knd-c-gone">
-                                <div class="knd-text-frame">
-                                    <h4 class="knd-head4 knd-max-2row-text knd-mb20 knd-up">10 Essential Tools Every Graphic Designer Should Master</h4>
-                                    <p class="knd-text-md knd-max-2row-text knd-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
-                                </div>
-                                <div class="knd-up knd-768-gone">
-                                    <div class="knd-stylized-btn">
-                                        <i class="fal fa-arrow-up"></i>
-                                        <span>Read more</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="knd-blog-card">
-                            <div class="knd-cover knd-up">
-                                <div class="knd-hover-frame">
-                                    <img src="~/theme/v1/img/blog/11.jpg" alt="cover" class="knd-scale-img" data-value-1="1.15" data-value-2="1">
-                                </div>
-                                <div class="knd-badges">
-                                    <div class="knd-category">Art</div>
-                                    <div class="knd-date">29.08.24</div>
-                                </div>
-                            </div>
-                            <a href="publication-stl.html" class="knd-descr knd-c-gone">
-                                <div class="knd-text-frame">
-                                    <h4 class="knd-head4 knd-max-2row-text knd-mb20 knd-up">From Concept to Creation: The Design Process Explained</h4>
-                                    <p class="knd-text-md knd-max-2row-text knd-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
-                                </div>
-                                <div class="knd-up knd-768-gone">
-                                    <div class="knd-stylized-btn">
-                                        <i class="fal fa-arrow-up"></i>
-                                        <span>Read more</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="knd-blog-card">
-                            <div class="knd-cover knd-up">
-                                <div class="knd-hover-frame">
-                                    <img src="~/theme/v1/img/blog/12.jpg" alt="cover" class="knd-scale-img" data-value-1="1.15" data-value-2="1">
-                                </div>
-                                <div class="knd-badges">
-                                    <div class="knd-category">Interior</div>
-                                    <div class="knd-date">29.08.24</div>
-                                </div>
-                            </div>
-                            <a href="publication-stl.html" class="knd-descr knd-c-gone">
-                                <div class="knd-text-frame">
-                                    <h4 class="knd-head4 knd-max-2row-text knd-mb20 knd-up">The Ultimate Guide to UI/UX Design for Beginners</h4>
-                                    <p class="knd-text-md knd-max-2row-text knd-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
-                                </div>
-                                <div class="knd-up knd-768-gone">
-                                    <div class="knd-stylized-btn">
-                                        <i class="fal fa-arrow-up"></i>
-                                        <span>Read more</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- blog end -->
-
     <!-- subscribe -->
-    <div class="container">
-        <div class="knd-half-container knd-stl knd-reverse knd-up">
-            <div class="knd-text-box knd-g-m4 knd-p-160-160">
-                <p class="knd-stylized knd-m2 knd-mb60 knd-up">Newsletter</p>
-                <h2 class="knd-display3 knd-rubber knd-mb60 knd-up">Subscribe <span class="knd-a2">our</span> <br>newsletter</h2>
-                <form class="knd-subscribe-form knd-up knd-c-gone">
-                    <input type="text" placeholder="Enter your email">
-                    <button type="submit"><i class="fal fa-arrow-right"></i></button>
-                </form>
+    <section class="knd-p-0-160" id="subscribe">
+        <div class="container">
+            <div class="knd-half-container knd-stl knd-reverse knd-up">
+                <div class="knd-text-box knd-g-m4 knd-p-160-160">
+                    <p class="knd-stylized knd-m2 knd-mb60 knd-up">Send Your Thoughts</p>
+                    <h2 class="knd-display3 knd-rubber knd-mb60 knd-up">Get in touch & <span class="knd-a2">FEEL CEYL0N Heritage Taste.</span></h2>
+                    <form class="knd-subscribe-form knd-up knd-c-gone">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit"><i class="fal fa-arrow-right"></i></button>
+                    </form>
+                </div>
+                <div class="knd-image-box">
+                    <div class="knd-image-frame">
+                        <!-- image background<img src="img/home-4/2.jpg" alt="img" class="knd-scale-img" data-value-1="1.20" data-value-2="1">-->
+                        <img src="~/theme/v1/img/shapes/Spices.jpg" alt="img" class="knd-scale-img" data-value-1="1.20" data-value-2="1">
+                        <div class="knd-overlay"></div>
+                    </div>
+                </div>
             </div>
-            <div class="knd-image-box">
-                <div class="knd-image-frame">
-                    <!-- image background<img src="img/home-4/2.jpg" alt="img" class="knd-scale-img" data-value-1="1.20" data-value-2="1">-->
-                    <video class="knd-scale-img" data-value-1="1" data-value-2="1.1" autoplay="autoplay" loop="loop" muted="" playsinline="" oncontextmenu="return false;" preload="auto">
-                        <source src="~/theme/v1/img/home-4/3.mp4">
-                    </video>
-                    <div class="knd-overlay"></div>
+            <div class="row knd-aic knd-jcb knd-no-g">
+                <div class="col-lg-6">
+                    <div class="knd-button-pad knd-a1 knd-jst" style="display: block"></div>
+                </div>
+                <div class="col-lg-6 knd-992-gone">
+                    <div class="knd-text-pad">
+                        <p class="knd-text-sm knd-up">By clicking the submit button, you agree to the <br><a href="#" class="knd-text-link knd-a2 knd-c-gone">rules for processing personal data</a>.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row knd-aic knd-jcb knd-no-g">
-            <div class="col-lg-6">
-                <div class="knd-button-pad knd-a1 knd-jst" style="display: block"></div>
-            </div>
-            <div class="col-lg-6 knd-992-gone">
-                <div class="knd-text-pad">
-                    <p class="knd-text-sm knd-up">By clicking the submit button, you agree to the <br><a href="contact-stl.html" class="knd-text-link knd-a2 knd-c-gone">rules for processing personal data</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
     <!-- subscribe end -->
 
     @Html.RenderAction("Footer", "KandyCrownHome", new { Area = "" })

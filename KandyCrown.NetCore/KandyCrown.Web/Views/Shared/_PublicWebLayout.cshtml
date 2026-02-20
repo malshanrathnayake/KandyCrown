@@ -9,6 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--SEO-->
+    <meta name="author" content="Wild Ceylon">
+    <meta name="keywords" content="Sri Lankan restaurant, Modern Sri Lankan cuisine, Sri Lankan bar, Arrack cocktails, Ceylon food, Sri Lankan dining, Authentic Sri Lankan flavours">
+    <meta name="description" content="Wild Ceylon is a modern Sri Lankan restaurant and bar inspired by royal heritage. Experience authentic Sri Lankan flavours, signature arrack cocktails, and vibrant hospitality in a relaxed yet refined setting.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.wildceylon.com/" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wild Ceylon | Modern Sri Lankan Restaurant & Bar">
+    <meta property="og:description" content="Royal Sri Lankan flavours reimagined for modern dining. Discover authentic cuisine, signature cocktails, and vibrant hospitality at Wild Ceylon.">
+    <meta property="og:image" content="https://www.wildceylon.com/theme/v1/img/shapes/Logo.png">
+    <meta property="og:url" content="https://www.wildceylon.com/">
+    <meta property="og:site_name" content="Wild Ceylon">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wild Ceylon | Modern Sri Lankan Restaurant & Bar">
+    <meta name="twitter:description" content="Authentic Sri Lankan cuisine, arrack cocktails, and royal-inspired hospitality.">
+    <meta name="twitter:image" content="https://www.wildceylon.com/theme/v1/img/shapes/Logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="~/theme/v1/img/shapes/Logo.png">
+
     <!-- grid css -->
     <link rel="stylesheet" href="~/theme/v1/css/plugins/bootstrap-grid.css">
     <!-- font awesome css -->
@@ -18,7 +43,25 @@
     <!-- okai css -->
     <link rel="stylesheet" href="~/theme/v1/css/style-dark.css">
     <!-- page title -->
-    <title>Kandy Crown</title>
+
+    @* <title>Wild Ceylon - @ViewData["Title"]</title> *@
+    <title>@ViewData["Title"] | Wild Ceylon - Modern Sri Lankan Restaurant & Bar</title>
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "Restaurant",
+          "name": "Wild Ceylon",
+          "image": "https://www.wildceylon.com/theme/v1/img/shapes/Logo.png",
+          "servesCuisine": "Sri Lankan",
+          "priceRange": "$$",
+          "description": "Modern Sri Lankan restaurant and bar inspired by royal heritage, offering authentic cuisine and arrack-based cocktails.",
+          "address": {
+            "@@type": "PostalAddress",
+            "addressCountry": "AU"
+          }
+        }
+    </script>
 
 </head>
 
@@ -35,14 +78,14 @@
         <div class="knd-preloader">
             <div class="knd-preloader-animation">
                 <div class="knd-pos-abs knd-animation-1">
-                    <p class="knd-head1 knd-m1">Kandy</p>
-                    <p class="knd-head1 knd-a2">Crown</p>
+                    <p class="knd-head1 knd-m1">Wild</p>
+                    <p class="knd-head1 knd-a2">Ceylon</p>
                     <p class="knd-head1 knd-m1">Restaurant</p>
                 </div>
                 <div class="knd-pos-abs knd-animation-2">
                     <div class="knd-reveal-frame">
                         <p class="knd-reveal-box"></p>
-                        <p class="knd-head1 knd-m1">kandycrown.com</p>
+                        <p class="knd-head1 knd-m1">wildceylon.com</p>
                     </div>
                 </div>
             </div>
